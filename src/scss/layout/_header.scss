@@ -10,7 +10,7 @@
         width: 300%;
         padding: 0;
         margin: 0;
-        animation: cambio 20s infinite alternate ease-in-out;
+        animation: cambio 15s infinite alternate ease-in-out;
 
         li {
             width: 100%;
@@ -42,6 +42,164 @@
 
 }
 
+.header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+
+    .barra{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        padding: $separacion 2rem;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include tablet{
+            height: 70px;
+            padding: $separacion;
+        }
+
+        //logo
+        .logo{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            a{
+                color: $blanco;
+                text-decoration: none;
+                font-size: 2.6rem;
+                font-weight: $bold;
+                letter-spacing: 2px;
+                width: 100%;
+
+                @include tablet{
+                    font-size: 5rem;
+                }
+            }
+
+            i{
+                display: none;
+                @include tablet{
+                    display: block;
+                    color: yellow;
+                    font-size: 5rem;
+                    animation: rotar 50s infinite;
+                    animation-delay: -2s;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+
+        //Menu
+        .navegacion-principal{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 90px;
+            left: -100vw;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,.8);
+            z-index: 10000;
+            transition: all .3s ease-in;
+
+            @include tablet{
+                position: relative;
+                width: auto;
+                height: auto;
+                background: none;
+                display: flex;
+                flex-direction: row;
+                top: 0;
+            }
+            
+            &.show{
+                left: 0;
+            }
+            
+            a{
+                margin: 0;
+                color: $blanco;
+                text-decoration: none;
+                display: block;
+                transition: all .3s ease;
+                text-align: center;
+                font-size: 2.5rem;
+                padding: $separacion/2;
+
+                &:hover{
+                    background-color: #e1e1e1;
+                    color: $negro;
+                }
+
+                @include tablet{
+                    padding-right: 2rem;
+
+                    &:hover{
+                        background-color: transparent;
+                        color: $verdeAgua;
+                    }
+                }
+                
+            }
+
+        }
+
+        //Boton menu responsive
+        .menu-toggle{
+            display: block;
+            i{
+                color: $blanco;
+                font-size: 3rem;
+            }
+            @include tablet{
+                display: none;
+            }
+        }
+
+
+    }
+
+
+    .promocion{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        p{
+            padding: 0;
+            margin: 0;
+            color: $blanco;
+            font-weight: $bold;
+            text-decoration: none;
+            font-size: 2rem;
+            display: block;
+            padding: $separacion/5;
+            background-color: rgba(0,255,255,0.6);
+
+        }
+    }
+}
+
+
+
+
+
+
+
 @keyframes cambio {
     0% {
         margin-left: 0;
@@ -68,61 +226,21 @@
     }
 }
 
-.header{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left:0;
-
-    .barra{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 70px;
-        display: flex;
-        padding: $separacion;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo{
-            padding: 0;
-            margin: 0;
-            a{
-                color: $blanco;
-                text-decoration: none;
-                font-size: 5rem;
-                font-weight: $bold;
-                letter-spacing: 3px;
-            }
-        }
-
-        .navegacion-principal{
-            display: flex;
-            flex-direction: row;
-
-            a{
-                margin: 0;
-                color: $blanco;
-                text-decoration: none;
-                display: block;
-                padding-right: 2rem;
-                transition: all .3s ease-in;
-
-                &:hover{
-                    color: $verdeAgua;
-                }
-            }
-
-        }
-
-
-        .menu-toggle{
-            display: none;
-        }
-
-
+@keyframes rotar{
+    0%{
+        transform: rotate(0);
     }
-}
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(250deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 
+}
