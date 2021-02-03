@@ -1,123 +1,128 @@
-.header {
-    position: relative;
-    //background-image: url("/build/img/hotelSumaj.webp");
-    background-image: url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
-    height: 60vh;
+//Slider Imagenes
+.slider {
     width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-    @include escritorio {
-        background-position: 0 70%;
-        height: 100vh;
+    ul {
+        display: flex;
+        width: 300%;
+        padding: 0;
+        margin: 0;
+        animation: cambio 20s infinite alternate ease-in-out;
+
+        li {
+            width: 100%;
+            list-style: none;
+
+            img {
+                width: 100%;
+                min-height: 400px;
+
+                @include tablet {
+                    height: 100vh;
+                }
+            }
+        }
     }
 
     &::before {
         content: "";
         display: block;
-        position: absolute;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 400px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        @include tablet {
+            height: 100vh;
+        }
     }
 
 }
 
-.barra {
-    position: relative;
-    @include grid(4, $separacion);
-    padding: $separacion 2rem;
-    align-items: center;
-
-    @include escritorio {
-        padding: $separacion 4rem;
+@keyframes cambio {
+    0% {
+        margin-left: 0;
     }
 
-    //Logo
-    .logo {
-        grid-column: 1 / 4;
+    30% {
+        margin-left: 0;
+    }
 
-        a {
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+
+    .barra{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        padding: $separacion;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
             padding: 0;
             margin: 0;
-            font-size: 3rem;
-            text-transform: uppercase;
-            color: $blanco;
-            text-decoration: none;
-            font-weight: $bold;
-
-            @include escritorio {
-                font-size: 6rem;
+            a{
+                color: $blanco;
+                text-decoration: none;
+                font-size: 5rem;
+                font-weight: $bold;
+                letter-spacing: 3px;
             }
         }
 
-        @include escritorio {
-            grid-column: 1 / 3;
-        }
-    }
-
-    //Navegacion principal
-    .navegacion-principal {
-        display: none;
-
-        @include escritorio {
+        .navegacion-principal{
             display: flex;
-            grid-column: 4 / 5;
-        }
+            flex-direction: row;
 
-        &.show {
-            background: rgba(0, 0, 0, 0.8);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            row-gap: 2rem;
-            border-bottom: 1px solid #e1e1e1;
-        }
+            a{
+                margin: 0;
+                color: $blanco;
+                text-decoration: none;
+                display: block;
+                padding-right: 2rem;
+                transition: all .3s ease-in;
 
-        a {
-            margin: 0;
-            color: $blanco;
-            text-decoration: none;
-            font-size: 1.8rem;
-            padding: $separacion/4 0;
-
-            @include escritorio {
-                padding-right: $separacion/2;
-                transition: color .3s ease-in;
-
-                &:last-of-type {
-                    padding-right: 0;
-                }
-
-                &:hover {
+                &:hover{
                     color: $verdeAgua;
                 }
             }
+
         }
 
-    }
 
-
-    //Menu toggle
-    .menu-toggle {
-        grid-column: 4 / 5;
-        z-index: 100;
-
-        i {
-            color: white;
-            font-size: 3rem;
-            cursor: pointer;
-        }
-
-        @include escritorio {
+        .menu-toggle{
             display: none;
         }
+
+
     }
 }
+
