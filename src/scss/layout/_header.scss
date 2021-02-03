@@ -42,14 +42,14 @@
 
 }
 
-.header{
+.header {
     position: relative;
     width: 100%;
     height: 100%;
     top: 0;
-    left:0;
+    left: 0;
 
-    .barra{
+    .barra {
         position: absolute;
         top: 0;
         left: 0;
@@ -59,19 +59,20 @@
         padding: $separacion 2rem;
         justify-content: space-between;
         align-items: center;
-        
-        @include tablet{
+
+        @include tablet {
             height: 70px;
             padding: $separacion;
         }
 
         //logo
-        .logo{
+        .logo {
             padding: 0;
             margin: 0;
             display: flex;
             align-items: center;
-            a{
+
+            a {
                 color: $blanco;
                 text-decoration: none;
                 font-size: 2.6rem;
@@ -79,26 +80,24 @@
                 letter-spacing: 2px;
                 width: 100%;
 
-                @include tablet{
+                @include tablet {
                     font-size: 5rem;
                 }
             }
 
-            i{
-                display: none;
-                @include tablet{
-                    display: block;
-                    color: yellow;
-                    font-size: 5rem;
-                    animation: rotar 50s infinite;
-                    animation-delay: -2s;
-                    padding-right: 0.5rem;
-                }
+            i {
+                display: block;
+                color: yellow;
+                font-size: 5rem;
+                animation: rotar 50s infinite;
+                animation-delay: -2s;
+                padding-right: 0.5rem;
+
             }
         }
 
         //Menu
-        .navegacion-principal{
+        .navegacion-principal {
             position: fixed;
             width: 100%;
             height: 100%;
@@ -108,11 +107,11 @@
             flex-direction: column;
             align-content: center;
             justify-content: center;
-            background-color: rgba(0,0,0,.8);
+            background-color: rgba(0, 0, 0, .8);
             z-index: 10000;
             transition: all .3s ease-in;
 
-            @include tablet{
+            @include tablet {
                 position: relative;
                 width: auto;
                 height: auto;
@@ -121,12 +120,12 @@
                 flex-direction: row;
                 top: 0;
             }
-            
-            &.show{
+
+            &.show {
                 left: 0;
             }
-            
-            a{
+
+            a {
                 margin: 0;
                 color: $blanco;
                 text-decoration: none;
@@ -136,32 +135,34 @@
                 font-size: 2.5rem;
                 padding: $separacion/2;
 
-                &:hover{
+                &:hover {
                     background-color: #e1e1e1;
                     color: $negro;
                 }
 
-                @include tablet{
+                @include tablet {
                     padding-right: 2rem;
 
-                    &:hover{
+                    &:hover {
                         background-color: transparent;
                         color: $verdeAgua;
                     }
                 }
-                
+
             }
 
         }
 
         //Boton menu responsive
-        .menu-toggle{
+        .menu-toggle {
             display: block;
-            i{
+
+            i {
                 color: $blanco;
                 font-size: 3rem;
             }
-            @include tablet{
+
+            @include tablet {
                 display: none;
             }
         }
@@ -170,7 +171,13 @@
     }
 
 
-    .promocion{
+    .bienvenida {
+        position: absolute;
+        top: 50%;
+    }
+
+
+    .promocion {
         padding: 0;
         margin: 0;
         position: absolute;
@@ -179,7 +186,8 @@
         right: 0;
         width: 100%;
         text-align: center;
-        p{
+
+        p {
             padding: 0;
             margin: 0;
             color: $blanco;
@@ -188,7 +196,7 @@
             font-size: 2rem;
             display: block;
             padding: $separacion/5;
-            background-color: rgba(0,255,255,0.6);
+            background-color: rgba(0, 255, 255, 0.6);
 
         }
     }
@@ -226,20 +234,24 @@
     }
 }
 
-@keyframes rotar{
-    0%{
+@keyframes rotar {
+    0% {
         transform: rotate(0);
     }
-    25%{
+
+    25% {
         transform: rotate(90deg);
     }
-    50%{
+
+    50% {
         transform: rotate(180deg);
     }
-    75%{
+
+    75% {
         transform: rotate(250deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 

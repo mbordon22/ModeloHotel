@@ -443,17 +443,12 @@ body {
   }
 }
 .header .barra .logo i {
-  display: none;
-}
-@media (min-width: 768px) {
-  .header .barra .logo i {
-    display: block;
-    color: yellow;
-    font-size: 5rem;
-    animation: rotar 50s infinite;
-    animation-delay: -2s;
-    padding-right: 0.5rem;
-  }
+  display: block;
+  color: yellow;
+  font-size: 5rem;
+  animation: rotar 50s infinite;
+  animation-delay: -2s;
+  padding-right: 0.5rem;
 }
 .header .barra .navegacion-principal {
   position: fixed;
@@ -517,6 +512,10 @@ body {
   .header .barra .menu-toggle {
     display: none;
   }
+}
+.header .bienvenida {
+  position: absolute;
+  top: 50%;
 }
 .header .promocion {
   padding: 0;
