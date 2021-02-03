@@ -1,0 +1,67 @@
+.header{
+    position: relative;
+    background-image: url("/build/img/hotelSumaj.webp");
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet{
+        background-position: 0 70%;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+}
+
+.barra{
+    position: relative;
+    @include grid(4, $separacion);
+    padding: $separacion/2 2rem;
+    align-items: center;
+
+    @include tablet{
+        padding: $separacion/2 4rem;
+    }
+
+    .logo{
+        grid-column: 1 / 4;
+        a{
+            padding: 0;
+            margin: 0;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            color: $blanco;
+            text-decoration: none;
+            font-weight: $bold;
+
+            @include tablet{
+                font-size: 4rem;
+            }
+        }
+
+        @include tablet{
+            
+        }
+    }
+
+    .navegacion-principal{
+        display: none;
+    }
+
+    .menu-toggle{
+        grid-column: 4 / 5;
+        i{
+            color: white;
+            font-size: 3rem;
+        }
+    }
+}

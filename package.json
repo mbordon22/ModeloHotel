@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Modelo de blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbordon22/blog.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP",
+    "HTML",
+    "JAVASCRIPT"
+  ],
+  "author": "Maximiliano Rivadeneira Bordón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbordon22/blog/issues"
+  },
+  "homepage": "https://github.com/mbordon22/blog#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2"
+  }
+}
