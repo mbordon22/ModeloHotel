@@ -516,6 +516,12 @@ body {
 .header .bienvenida {
   position: absolute;
   top: 50%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header .bienvenida p {
+  color: #ffffff;
+  font-size: 3rem;
 }
 .header .promocion {
   padding: 0;
