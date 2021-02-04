@@ -1,0 +1,40 @@
+.nosotros{
+
+    .contenedor{
+        
+        @include tablet{
+            
+        }
+
+        h2{
+            text-align: center;
+            font-size: 3rem;
+
+            @include tablet{
+                font-size: 4rem;
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                width: 65%;
+                height: 18px;
+                background-image: url("../img/subrayado.png");
+                background-size: cover;
+                margin: 0 auto;
+
+                @include tablet{
+                    height: 25px;
+                    width: 25%;
+                }
+            }
+        }
+
+        p{
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        
+    }
+}

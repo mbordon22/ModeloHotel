@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,34 @@
     <link rel="stylesheet" href="build/fontawesome/css/all.css">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
+
+    <!--Preloader-->
+    <div class="preloaded">
+        <div class="contenedor-preloaded">
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+            <div class="linea"></div>
+        </div>
+    </div>
+
+    <!--Header-->
     <header class="header">
         <!--Slider Imagenes-->
         <div class="slider">
             <ul>
-                <li><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt=""></li>
-                <li><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt=""></li>
-                <li><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" alt=""></li>
+                <li><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt=""></li>
+                <li><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
+                        alt=""></li>
+                <li><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                        alt=""></li>
             </ul>
         </div>
 
@@ -22,13 +43,13 @@
         <div class="barra">
             <div class="logo">
                 <i class="fas fa-sun"></i>
-                <a href="index.html" >Hotel del Valle</a>
+                <a href="index.html">Hotel del Valle</a>
             </div>
 
             <div class="navegacion-principal">
-                <a href="#">Servicios</a>
+                <a href="#" class="active">Inicio</a>
                 <a href="#">Habitaciones</a>
-                <a href="#">Promociones</a>
+                <a href="#">Servicios</a>
                 <a href="#">Contacto</a>
             </div>
 
@@ -45,11 +66,30 @@
 
         <!--Bienvenida idiomas-->
         <div class="bienvenida">
-            <p class="texto-bienvenida" id="texto-bienvenida"></p>
+            <div class="contenedor-texto">
+                <p class="texto-bienvenida" id="texto-bienvenida"></p>
+            </div>
+
+            <div class="contenedor-boton">
+                <a href="#">Reserva Ahora<i class="fas fa-arrow-down"></i></a>
+            </div>
         </div>
     </header>
-    
+
+    <!--Sobre Nosotros-->
+    <div class="nosotros">
+        <div class="contenedor">
+            <h2>Hotel del Valle</h2>
+            <div class="texto-info">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur vel veritatis, fugiat quas impedit ab similique animi quis voluptatem, rerum possimus perspiciatis nam tempora assumenda. Veniam a doloremque facilis aliquam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptate velit eveniet dolores, obcaecati neque aspernatur, ut cumque exercitationem minus nobis ipsa vel quae magnam. Possimus commodi rerum aliquam quasi.</p>
+            </div>
+        </div>
+    </div>
+
+
     <script src="build/js/jquery.js"></script>
     <script src="build/js/app.js"></script>
 </body>
+
 </html>
