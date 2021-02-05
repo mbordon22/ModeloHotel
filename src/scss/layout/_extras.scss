@@ -8,6 +8,7 @@
     @include tablet{
         display: flex;
         flex-wrap: wrap;
+        border: 1px solid #e1e1e1;
 
         .imagen{
             flex: 0 0 50%;
@@ -22,7 +23,7 @@
             align-items: center;
             padding: 0 $separacion;
             margin: 0;
-            border: 1px solid #e1e1e1;
+            
 
             .subtitulo{
                 text-transform: uppercase;

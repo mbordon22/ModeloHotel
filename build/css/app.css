@@ -806,6 +806,7 @@ img {
   .contenedor-extras {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid #e1e1e1;
   }
   .contenedor-extras .imagen {
     flex: 0 0 50%;
@@ -819,7 +820,6 @@ img {
     align-items: center;
     padding: 0 5rem;
     margin: 0;
-    border: 1px solid #e1e1e1;
   }
   .contenedor-extras .contenido-extra .subtitulo {
     text-transform: uppercase;
@@ -837,6 +837,22 @@ img {
     color: #555353;
     text-align: center;
   }
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ubicacion .mapa {
+  min-height: 500px;
+  flex: 0 0 50%;
+}
+.ubicacion .informacion-ubicacion {
+  flex: 0 0 30%;
+}
+.ubicacion .informacion-ubicacion p {
+  color: #000000;
 }
 
 .catering {
@@ -893,4 +909,53 @@ img {
     color: #ffffff;
     font-size: 2rem;
   }
+}
+
+.contenedor-footer {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+.contenedor-footer .imagenes {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+.contenedor-footer .imagenes img {
+  width: 400px;
+  height: 100px;
+}
+.contenedor-footer .informacion h4 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+.contenedor-footer .informacion p {
+  text-align: center;
+}
+
+.redes-sociales {
+  position: fixed;
+  background-color: transparent;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+  border-radius: 15px 0 0 15px;
+}
+.redes-sociales i {
+  font-size: 3.4rem;
+  margin: 1.25rem 10px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.redes-sociales i:hover {
+  color: #00ffcc;
+  transform: scale(1.4);
 }
