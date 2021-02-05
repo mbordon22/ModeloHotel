@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
 }
 
+//Botones
 .btn {
     text-decoration: none;
     font-weight: $bold;
@@ -52,7 +53,23 @@ body {
         background-color: $blanco;
     }
 }
+
+//Imagenes
 img{
     width: 100%;
     height: 100%;
+}
+//imagen parallax
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
 }
