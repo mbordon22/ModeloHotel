@@ -203,28 +203,12 @@
             justify-content: center;
             align-items: center;
 
-            a{
-                color: $blanco;
-                text-decoration: none;
-                font-weight: $bold;
-                display: block;
-                font-size: 1.4rem;
-                padding: 1.2rem 2.4rem;
-                border: 1px solid #e1e1e1;
-                transition: all .3s ease-in;
-
-                &:hover{
-                    border: 1px solid $verdeAgua;
-                    color: $verdeAgua;
-                }
-                @include tablet{
-                    font-size: 1.6rem;
-                    padding: 1.5rem 3rem;
-                }
+            .btn{
 
                 i{
                     padding-left: 1rem;
                     font-size: 1.6rem;
+                    
                     @include tablet{
                         font-size: 2rem;
                     }

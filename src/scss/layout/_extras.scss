@@ -1,0 +1,46 @@
+.extras{
+    padding: $separacion 0;
+    
+}
+.contenedor-extras{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #e1e1e1;
+
+        .imagen{
+            flex: 0 0 50%;
+            height: 500px;
+        }
+
+        .contenido-extra{
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 $separacion;
+            margin: 0;
+
+            .subtitulo{
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: $amarillo;
+                font-weight: $bold;
+            }
+            
+            h3{
+                font-size: 3.4rem;
+                font-weight: $regular;
+                font-family: $fuenteSecundaria;
+                margin-top: .5rem;
+            }
+
+            .info{
+                //font-size: 1.8rem;
+                color: #555353;
+                text-align: center;
+            }
+        }
+    }
+}
