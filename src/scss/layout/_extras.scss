@@ -5,6 +5,34 @@
     
 }
 .contenedor-extras{
+    
+
+    .contenido-extra{
+
+        .subtitulo{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: $amarillo;
+            font-weight: $bold;
+            text-align: center;
+
+        }
+        
+        h3{
+            font-size: 3.4rem;
+            font-weight: $regular;
+            font-family: $fuenteSecundaria;
+            margin-top: .5rem;
+            text-align: center;
+        }
+
+        .info{
+            //font-size: 1.8rem;
+            color: #555353;
+            text-align: center;
+        }
+    }
+
     @include tablet{
         display: flex;
         flex-wrap: wrap;
@@ -25,25 +53,7 @@
             margin: 0;
             
 
-            .subtitulo{
-                text-transform: uppercase;
-                font-size: 1.4rem;
-                color: $amarillo;
-                font-weight: $bold;
-            }
             
-            h3{
-                font-size: 3.4rem;
-                font-weight: $regular;
-                font-family: $fuenteSecundaria;
-                margin-top: .5rem;
-            }
-
-            .info{
-                //font-size: 1.8rem;
-                color: #555353;
-                text-align: center;
-            }
         }
     }
 }

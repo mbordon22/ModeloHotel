@@ -17,47 +17,52 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
-        .contenedor{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    .contenedor{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-            .imagen{
-                flex: 0 0 50%;
-            }
-            .contenido{
-                flex: 0 0 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .subtitulo{
-                    color: $verdeAgua;
-                    text-align: center;
-                    font-size: 1.8rem;
-                    text-transform: uppercase;
-                }
-
-                h3{
-                    font-size: 7rem;
-                    color: white;
-                    text-align: center;
-                    letter-spacing: 3px;
-                    font-weight: $regular;
-                    margin: 5px 0;
-                }
-
-                .info{
-                    text-align: center;
-                    color: $blanco;
-                    font-size: 2rem;
-                }
-            }
-            
+        @include tablet{
+            flex-direction: row;
         }
+
+        .imagen{
+            flex: 0 0 50%;
+        }
+        .contenido{
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .subtitulo{
+                color: $verdeAgua;
+                text-align: center;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+            }
+
+            h3{
+                font-size: 7rem;
+                color: white;
+                text-align: center;
+                letter-spacing: 3px;
+                font-weight: $regular;
+                margin: 5px 0;
+            }
+
+            .info{
+                text-align: center;
+                color: $blanco;
+                font-size: 2rem;
+            }
+        }
+        
     }
 
 
