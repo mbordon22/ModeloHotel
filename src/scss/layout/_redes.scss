@@ -18,9 +18,15 @@
         transition: all .3s ease;
         cursor: pointer;
 
+        &.color{
+            color: $negro;
+        }
+    
         &:hover {
             color: $verdeAgua;
             transform: scale(1.4);
         }
     }
+
+    
 }

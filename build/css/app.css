@@ -985,6 +985,9 @@ img {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.redes-sociales i.color {
+  color: #000000;
+}
 .redes-sociales i:hover {
   color: #00ffcc;
   transform: scale(1.4);
