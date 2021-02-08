@@ -65,6 +65,13 @@
             padding: $separacion;
         }
 
+        &.fijo{
+            position: fixed;
+            width: 100%;
+            background-color: $negro;
+            z-index: 999999;
+        }
+
         //logo
         .logo {
             padding: 0;
