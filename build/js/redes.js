@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () =>{
     document.addEventListener("scroll", ()=>{
+        if(document.querySelector(".home-page")){
+            menuFijo();
+        }
         
-        menuFijo();
         
         colorRedes();
     })

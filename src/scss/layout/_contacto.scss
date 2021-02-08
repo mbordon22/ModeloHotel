@@ -1,0 +1,49 @@
+.titulo-contacto{
+    margin: $separacion 0;
+    font-size: 3.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: $regular;
+}
+
+//Mapa
+.ubicacion{
+    display: grid;
+    margin-bottom: 5rem;
+
+    .mapa{
+        min-height: 400px;
+        grid-row: 2 / 3;
+    }
+
+    .informacion-ubicacion{
+        grid-row: 1 / 2;
+        
+        p{
+            color: $negro;
+            margin-top: 0;
+            text-align: center;
+
+            i{
+                margin-right: .5rem;
+            }
+
+            &:not(p:nth-child(1)){
+                font-weight: $bold;
+            }
+        }
+    }
+}
+
+//REDES
+.contact-page{
+    .redes-sociales{
+        i{
+            color: $negro;
+
+            &:hover{
+                color: $verdeAgua;
+            }
+        }
+    }
+}
