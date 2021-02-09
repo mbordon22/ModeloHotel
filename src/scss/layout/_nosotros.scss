@@ -26,20 +26,24 @@
 
         .contenedor-iconos{
             display: flex;
-            flex-direction:column ;
             width: 100%;
             justify-content: space-between;
             margin-top: $separacion;
+            flex-wrap: wrap;
 
-            @include tablet{
-                flex-direction: row;
-            }
             .grupo-icono{
+                flex: 0 0 calc(50% - 2rem);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
+                @include tablet{
+                    flex: 0 0 calc(33.3% - 2rem);
+                }
+                @include escritorio{
+                    flex: 1;
+                }
                 i{
                     color: $verdeAgua;
                     font-size: 5rem;

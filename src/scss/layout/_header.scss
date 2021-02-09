@@ -84,12 +84,24 @@
             a {
                 color: $blanco;
                 text-decoration: none;
-                font-size: 2.6rem;
+                font-size: 2rem;
                 font-weight: $bold;
                 letter-spacing: 2px;
                 width: 100%;
 
-                @include tablet {
+                @include telefono{
+                    font-size: 2.4rem;
+                }
+
+                @include tablet{
+                    font-size: 3rem;
+                }
+
+                @include laptop{
+                    font-size: 4rem;
+                }
+
+                @include escritorio {
                     font-size: 5rem;
                 }
             }
@@ -116,11 +128,11 @@
             flex-direction: column;
             align-content: center;
             justify-content: center;
-            background-color: rgba(0, 0, 0, .8);
+            background-color: rgba(0, 0, 0, 1);
             z-index: 10000;
             transition: all .3s ease-in;
 
-            @include tablet {
+            @include escritorio {
                 position: relative;
                 width: auto;
                 height: auto;
@@ -144,12 +156,16 @@
                 font-size: 2.5rem;
                 padding: $separacion/2;
 
+                @include tablet{
+                    font-size: 4rem;
+                }
+
                 &:hover {
                     background-color: #e1e1e1;
                     color: $negro;
                 }
 
-                @include tablet {
+                @include escritorio {
                     padding-right: 2rem;
 
                     &:hover {
@@ -175,7 +191,7 @@
                 font-size: 3rem;
             }
 
-            @include tablet {
+            @include escritorio {
                 display: none;
             }
         }
@@ -203,30 +219,38 @@
                 @include tablet{
                     font-size: 4rem;
                 }
-            }
-            
-        }
-
-        .contenedor-boton{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .btn{
-
-                i{
-                    padding-left: 1rem;
-                    font-size: 1.6rem;
-                    
-                    @include tablet{
-                        font-size: 2rem;
-                    }
+                @include laptop{
+                    font-size: 6rem;
                 }
             }
+            
         }
         
     }
 
+    .contenedor-boton{
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @include escritorio{
+            top: 60%;
+        }
+
+        .btn{
+
+            i{
+                padding-left: 1rem;
+                font-size: 1.6rem;
+                
+                @include tablet{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 
     .promocion {
         padding: 0;
@@ -249,6 +273,9 @@
             padding: $separacion/5;
             background-color: rgba(0, 255, 255, 0.6);
 
+            @include tablet{
+                font-size: 2.4rem;
+            }
         }
     }
 }
@@ -286,12 +313,24 @@
             a {
                 color: $blanco;
                 text-decoration: none;
-                font-size: 2.6rem;
+                font-size: 2rem;
                 font-weight: $bold;
                 letter-spacing: 2px;
                 width: 100%;
 
-                @include tablet {
+                @include telefono{
+                    font-size: 2.4rem;
+                }
+
+                @include tablet{
+                    font-size: 3rem;
+                }
+
+                @include laptop{
+                    font-size: 4rem;
+                }
+
+                @include escritorio {
                     font-size: 5rem;
                 }
             }
@@ -318,11 +357,11 @@
             flex-direction: column;
             align-content: center;
             justify-content: center;
-            background-color: rgba(0, 0, 0, .8);
+            background-color: rgba(0, 0, 0, 1);
             z-index: 10000;
             transition: all .3s ease-in;
 
-            @include tablet {
+            @include escritorio {
                 position: relative;
                 width: auto;
                 height: auto;
@@ -346,12 +385,16 @@
                 font-size: 2.5rem;
                 padding: $separacion/2;
 
+                @include tablet{
+                    font-size: 4rem;
+                }
+
                 &:hover {
                     background-color: #e1e1e1;
                     color: $negro;
                 }
 
-                @include tablet {
+                @include escritorio {
                     padding-right: 2rem;
 
                     &:hover {
@@ -377,7 +420,7 @@
                 font-size: 3rem;
             }
 
-            @include tablet {
+            @include escritorio {
                 display: none;
             }
         }

@@ -1,12 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     
     if(document.querySelector(".home-page")){
-        maquinaEscribir();
+        //Typing animation script 
+        var typed = new Typed("#texto-bienvenida", {
+
+        strings: ["Bienvenido a nuestro Hotel", "Welcome to our Hotel", "Bienvenue dans notre Hôtel", "Bem vindo ao nosso Hotel", "Willkommen in unserem Hotel", "Benvenuti nel nostro Hotel"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+        });
     }
-
-
-    cargarImagenes();
-    
+    else if(document.querySelector(".rooms-page")){
+        cargarImagenes();    
+    }
+    else if(document.querySelector(".service-page")){
+        //Slider servicios
+        $('.single-item').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            height: "300px"
+        });
+    }
 });
 
 
@@ -20,21 +35,6 @@ document.querySelector(".menu-toggle a").addEventListener("click", function (e) 
 if (window.screen.width > 480) {
     document.querySelector(".navegacion-principal").classList.add("show");
 }
-
-
-
-//Funcion Maquina de escribir
-var i = 0;
-var texto = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
-
-function maquinaEscribir() {
-    if (i < texto.length) {
-        document.querySelector("#texto-bienvenida").innerHTML += texto.charAt(i);
-        i++;
-        setTimeout(maquinaEscribir, 100);
-    }
-}
-
 
 
 //Preloader
@@ -105,9 +105,3 @@ function mostrarImagen(e) {
 
 
 
-$('.single-item').slick({
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: false,
-  height: "300px"
-});

@@ -26,7 +26,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include tablet{
+        @include laptop{
             flex-direction: row;
         }
 
@@ -48,12 +48,16 @@
             }
 
             h3{
-                font-size: 7rem;
+                font-size: 4rem;
                 color: white;
                 text-align: center;
                 letter-spacing: 3px;
                 font-weight: $regular;
                 margin: 5px 0;
+
+                @include tablet{
+                    font-size: 7rem;
+                }
             }
 
             .info{

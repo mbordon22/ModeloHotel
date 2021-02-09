@@ -11,6 +11,12 @@
     }
 }
 
+@mixin laptop {
+    @media (min-width: $laptop) {
+        @content;
+    }
+}
+
 @mixin escritorio {
     @media (min-width: $escritorio) {
         @content;

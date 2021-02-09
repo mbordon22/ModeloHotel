@@ -22,11 +22,15 @@ body {
 
 h2{
     margin: $separacion 0;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     text-align: center;
     letter-spacing: 2px;
     font-weight: $regular;
     text-transform: uppercase;
+
+    @include tablet{
+        font-size: 3.8rem;
+    }
 }
 
 //Botones
@@ -43,7 +47,7 @@ h2{
         font-size: 1.6rem;
         padding: 1.5rem 3rem;
     }
-}
+    
 .btn-transparente{
     color: $blanco;
     border: 1px solid #e1e1e1;
