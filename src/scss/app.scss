@@ -4,6 +4,8 @@
 @import "bases/variables";
 @import "bases/mixins";
 @import "bases/globales";
+@import "bases/slick-theme.scss";
+@import "bases/slick.scss";
 
 
 //Layouts
@@ -15,4 +17,5 @@
 @import "layout/footer";
 @import "layout/redes";
 @import "layout/habitaciones";
+@import "layout/servicios";
 @import "layout/contacto";

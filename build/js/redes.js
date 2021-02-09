@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", () =>{
-    document.addEventListener("scroll", ()=>{
         if(document.querySelector(".home-page")){
-            menuFijo();
+            document.addEventListener("scroll", ()=>{
+                menuFijo();
+                colorRedes();
+            });
         }
-        
-        
-        colorRedes();
-    })
+        else{
+            var iconos = document.querySelectorAll(".redes-sociales i");
+            for(var i = 0; i < iconos.length; i++){
+                iconos[i].classList.add("color");
+            }
+        }
+    
 });
 
 function colorRedes(){

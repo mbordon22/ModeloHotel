@@ -20,6 +20,15 @@ body {
     margin: 0 auto;
 }
 
+h2{
+    margin: $separacion 0;
+    font-size: 3.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: $regular;
+    text-transform: uppercase;
+}
+
 //Botones
 .btn {
     text-decoration: none;

@@ -18,34 +18,6 @@
             }
         }
 
-        h2{
-            text-align: center;
-            font-size: 3rem;
-            letter-spacing: 2px;
-            font-weight: $regular;
-
-            @include tablet{
-                font-size: 5rem;
-                letter-spacing: 2px;
-                font-weight: $regular;
-            }
-
-            &::after{
-                content: "";
-                display: block;
-                width: 65%;
-                height: 18px;
-                background-image: url("../img/subrayado.png");
-                background-size: cover;
-                margin: 0 auto;
-
-                @include tablet{
-                    height: 30px;
-                    width: 30%;
-                }
-            }
-        }
-
         p{
             font-size: 1.8rem;
             text-align: center;

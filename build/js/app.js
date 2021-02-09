@@ -100,4 +100,14 @@ function mostrarImagen(e) {
     const body = document.querySelector("body");
     body.appendChild(overlay);
     body.classList.add("fijar-body");
+
 }
+
+
+
+$('.single-item').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  height: "300px"
+});
