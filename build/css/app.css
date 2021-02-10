@@ -391,12 +391,6 @@ h2 {
     padding: 1.5rem 3rem;
   }
 }
-@media (min-width: 1024px) {
-  .btn {
-    font-size: 2rem;
-    padding: 1.6rem 3rem;
-  }
-}
 
 .btn-transparente {
   color: #ffffff;
@@ -893,6 +887,11 @@ img {
 @media (min-width: 768px) {
   .header .barra .navegacion-principal a {
     font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header .barra .navegacion-principal a {
+    font-size: 2.5rem;
   }
 }
 .header .barra .navegacion-principal a:hover {
