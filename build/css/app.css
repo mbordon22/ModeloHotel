@@ -1102,6 +1102,11 @@ img {
     font-size: 4rem;
   }
 }
+@media (min-width: 1200px) {
+  .header-page .barra .navegacion-principal a {
+    font-size: 2.5rem;
+  }
+}
 .header-page .barra .navegacion-principal a:hover {
   background-color: #e1e1e1;
   color: #000000;
