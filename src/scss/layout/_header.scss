@@ -160,6 +160,10 @@
                     font-size: 4rem;
                 }
 
+                @include escritorio{
+                    font-size: 2.5rem;
+                }
+
                 &:hover {
                     background-color: #e1e1e1;
                     color: $negro;
