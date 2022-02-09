@@ -372,7 +372,7 @@ h2 {
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -835,7 +835,7 @@ img {
 }
 @media (min-width: 1200px) {
   .header .barra .logo a {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .header .barra .logo i {
@@ -886,12 +886,12 @@ img {
 }
 @media (min-width: 768px) {
   .header .barra .navegacion-principal a {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
   .header .barra .navegacion-principal a {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }
 .header .barra .navegacion-principal a:hover {
@@ -946,7 +946,7 @@ img {
 }
 @media (min-width: 1024px) {
   .header .bienvenida .contenedor-texto p {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 .header .contenedor-boton {
@@ -993,7 +993,7 @@ img {
 }
 @media (min-width: 768px) {
   .header .promocion p {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1048,7 +1048,7 @@ img {
 }
 @media (min-width: 1200px) {
   .header-page .barra .logo a {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .header-page .barra .logo i {
@@ -1099,12 +1099,12 @@ img {
 }
 @media (min-width: 768px) {
   .header-page .barra .navegacion-principal a {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
   .header-page .barra .navegacion-principal a {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }
 .header-page .barra .navegacion-principal a:hover {
@@ -1184,13 +1184,13 @@ img {
     column-gap: 2rem;
   }
   .nosotros .contenedor .texto-info p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     flex: 0 0 50%;
     text-align: justify;
   }
 }
 .nosotros .contenedor p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 .nosotros .contenedor .contenedor-iconos {
@@ -1247,7 +1247,8 @@ img {
 }
 @media (min-width: 768px) {
   .contenedor-extras .contenido-extra h3 {
-    font-size: 3.8rem;
+    margin-top: 0;
+    font-size: 3rem;
   }
 }
 .contenedor-extras .contenido-extra .info {
@@ -1257,12 +1258,7 @@ img {
 }
 @media (min-width: 768px) {
   .contenedor-extras .contenido-extra .info {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .contenedor-extras .contenido-extra .info {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1348,7 +1344,7 @@ img {
 .catering .contenedor .contenido .subtitulo {
   color: #00ffcc;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 .catering .contenedor .contenido h3 {
@@ -1361,13 +1357,24 @@ img {
 }
 @media (min-width: 768px) {
   .catering .contenedor .contenido h3 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 }
+@media (min-width: 1024px) {
+  .catering .contenedor .contenido h3 {
+    font-size: 6rem;
+  }
+}
+
 .catering .contenedor .contenido .info {
   text-align: center;
   color: #ffffff;
   font-size: 2rem;
+}
+@media (min-width: 768px){
+  .catering .contenedor .contenido .info{
+    font-size: 1.6rem;
+  }
 }
 
 .contenedor-footer {
@@ -1421,7 +1428,7 @@ img {
     position: fixed;
     background-color: transparent;
     right: 0;
-    top: 40%;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     padding: 15px 5px;
@@ -1432,14 +1439,13 @@ img {
   font-size: 3.4rem;
   margin: 1.25rem 10px;
   color: #ffffff;
+  background-color: #00bb2d;
   transition: all 0.3s ease;
   cursor: pointer;
-}
-.redes-sociales i.color {
-  color: #000000;
+  border-radius: 50%;
+  padding: 8px 10px;
 }
 .redes-sociales i:hover {
-  color: #00ffcc;
   transform: scale(1.4);
 }
 
@@ -1451,12 +1457,12 @@ img {
 }
 @media (min-width: 768px) {
   .contenedor-habitaciones p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1024px) {
   .contenedor-habitaciones p {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 }
 .contenedor-habitaciones .galeria-imagenes {
@@ -1522,14 +1528,14 @@ img {
 }
 .contenedor-servicios p {
   margin-top: 2rem;
-  text-align: center;
   grid-column: 1/3;
   font-size: 1.8rem;
   line-height: 2;
 }
 @media (min-width: 1024px) {
   .contenedor-servicios p {
-    font-size: 2.4rem;
+    margin-top: 0;
+    font-size: 1.6rem;
   }
 }
 .contenedor-servicios .info-servicios ul li {
@@ -1538,7 +1544,7 @@ img {
 }
 @media (min-width: 1024px) {
   .contenedor-servicios .info-servicios ul li {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 .contenedor-servicios .galeria-servicios div {
@@ -1578,7 +1584,7 @@ img {
 }
 @media (min-width: 1024px) {
   .ubicacion .informacion-ubicacion p {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 }
 .ubicacion .informacion-ubicacion p i {
